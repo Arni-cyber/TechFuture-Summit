@@ -1,103 +1,70 @@
-/* Paleta de cores */
-:root {
-    --primaria: #1e3a8a;
-    --secundaria: #3b82f6;
-    --fundo: #f0f4f8;
-    --texto: #111827;
-    --branco: #ffffff;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFuture Summit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TechFuture Summit</h1>
+    </header>
 
-/* Estilo base */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--fundo);
-    color: var(--texto);
-}
+    <section id="sobre">
+        <h2>Sobre o Evento</h2>
+        <p><strong>Data:</strong> 26/05/2025</p>
+        <p><strong>Local:</strong> Salvador - BA</p>
+        <p>
+            O evento apresenta as inovações em <strong>robôs assistentes com habilidades sociais</strong> e seu papel no futuro da <strong>tecnologia doméstica</strong>.
+            Especialistas da área mostram como essas soluções estão transformando tarefas do dia a dia, oferecendo mais praticidade,
+            interação e acessibilidade dentro de casa.
+        </p>
+    </section>
 
-/* Cabeçalho */
-header {
-    background-color: var(--primaria);
-    color: var(--branco);
-    padding: 20px;
-    text-align: center;
-}
+    <section id="palestrantes">
+        <h2>Palestrantes</h2>
 
-/* Seções */
-section {
-    padding: 30px 20px;
-    margin: 20px;
-    background-color: var(--branco);
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+        <div class="palestrante">
+            <img src="Allan Port.jpg" alt="Foto de Allan Port">
+            <h3>Allan Port</h3>
+            <p><strong>Fundador e Diretor Executivo – Neurobyte</strong><br>
+            Formado em Administração e Ciências da Computação, une gestão estratégica e inovação tecnológica.</p>
+        </div>
 
-h2 {
-    color: var(--primaria);
-}
+        <div class="palestrante">
+            <img src="Cristiane Oliveira.jpg" alt="Foto de Cristiane Oliveira">
+            <h3>Cristiane Oliveira</h3>
+            <p><strong>Gerente de Desenvolvimento – Neurobyte</strong><br>
+            Especialista em desenvolvimento de software, lidera projetos inovadores e premiados.</p>
+        </div>
 
-/* Palestrantes */
-#palestrantes {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+        <div class="palestrante">
+            <img src="Sandra Castello.jpg" alt="Foto de Sandra Castello">
+            <h3>Sandra Castello</h3>
+            <p><strong>Administradora da Filial SP – Neurobyte</strong><br>
+            Referência em robótica assistiva e inclusão feminina na tecnologia.</p>
+        </div>
+    </section>
 
-.palestrante {
-    background-color: #fff;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    text-align: center;
-}
+    <section id="inscricao">
+        <h2>Inscreva-se no Evento</h2>
+        <form action="" method="get">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" minlength="3" maxlength="25" required>
 
-.palestrante img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
 
-/* Formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+            <p><strong>Tipo de ingresso:</strong></p>
+            <label><input type="radio" name="ingresso" value="presencial" required> Presencial</label>
+            <label><input type="radio" name="ingresso" value="online"> Online</label>
 
-input[type="text"],
-input[type="email"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-}
+            <label><input type="checkbox" name="termos" required> Eu aceito os termos e condições</label>
 
-button {
-    padding: 10px;
-    background-color: var(--secundaria);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
 
-button:hover {
-    background-color: #2563eb;
-}
-
-/* Responsividade */
-@media (min-width: 768px) {
-    #palestrantes {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .palestrante {
-        flex: 1;
-        max-width: 30%;
-    }
-}
+</body>
+</html>
