@@ -15,14 +15,13 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Variáveis para modo escuro */
+
 body.dark-mode {
   --fundo: #121212;
   --texto: #f0f0f0;
   --branco: #1e1e1e;
 }
 
-/* Agora todos os elementos usam as variáveis (e vão mudar no dark-mode automaticamente) */
 header {
   background-color: var(--primaria);
   color: var(--branco);
