@@ -1,10 +1,11 @@
 :root {
   --primaria: #1e3a8a;
   --secundaria: #3b82f6;
-  --fundo: #f0f4f8;
+  --fundo: #97b2cc;
   --texto: #111827;
-  --branco: #ffffff;
+  --branco: #89afbb;
 }
+
 
 body {
   font-family: Arial, sans-serif;
@@ -17,9 +18,9 @@ body {
 
 
 body.dark-mode {
-  --fundo: #121212;
+  --fundo: #060716;
   --texto: #f0f0f0;
-  --branco: #1e1e1e;
+  --branco: #77bada;
 }
 
 header {
@@ -32,10 +33,10 @@ header {
 section {
   padding: 30px 20px;
   margin: 20px;
-  background-color: var(--branco);
+  background-color: var(blue);
   color: var(--texto);
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgb(50, 121, 126);
 }
 
 h2 {
@@ -49,10 +50,10 @@ h2 {
 }
 
 .palestrante {
-  background-color: var(--branco);
+  background-color: var(rgb(34, 35, 145));
   color: var(--texto);
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #3b84c9;
   border-radius: 6px;
   text-align: center;
 }
@@ -74,7 +75,7 @@ form {
 input[type="text"],
 input[type="email"] {
   padding: 10px;
-  border: 1px solid #ccc;
+  border:  1px solid #64adcf;
   border-radius: 4px;
   width: 100%;
 }
@@ -82,7 +83,7 @@ input[type="email"] {
 button {
   padding: 10px;
   background-color: var(--secundaria);
-  color: #fff;
+  color: #031d3f;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -90,7 +91,7 @@ button {
 }
 
 button:hover {
-  background-color: #2563eb;
+  background-color: #445f99;
 }
 
 @media (min-width: 768px) {
