@@ -12,6 +12,7 @@
     <header class="hero">
         <div class="hero-content">
             <h1>TechFuture Summit</h1>
+            <button id="toggle-mode">Modo Escuro</button>
         </div>
     </header>
 
@@ -27,6 +28,14 @@
         </p>
     </section>
 
+<script>
+    const toggleButton = document.getElementById('toggle-mode');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+    
     <!-- Palestrantes -->
     <section id="palestrantes">
         <h2>Palestrantes</h2>
