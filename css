@@ -1,4 +1,4 @@
-/* Paleta de cores */
+
 :root {
     --primaria: #1e3a8a;
     --secundaria: #3b82f6;
@@ -48,7 +48,7 @@ header {
   font-family: 'Courier New', Courier, monospace ;
 }
 
-/* Seções */
+
 section {
     padding: 30px 20px;
     margin: 20px;
