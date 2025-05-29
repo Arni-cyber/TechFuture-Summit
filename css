@@ -36,9 +36,9 @@ body {
 }
 
 body.dark-mode {
-  --fundo: #060716;
-  --texto: #f0f0f0;
-  --branco: #77bada;
+--fundo: #060716;
+--texto: #3b2c2c;
+--branco: #77bada;
 }
 
 header {
@@ -99,7 +99,7 @@ input[type="email"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 100%;
+    width: 80%;
 }
 
 button {
