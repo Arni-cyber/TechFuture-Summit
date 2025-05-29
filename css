@@ -48,7 +48,6 @@ header {
   font-family: 'Courier New', Courier, monospace ;
 }
 
-
 section {
     padding: 30px 20px;
     margin: 20px;
@@ -62,7 +61,6 @@ h2 {
     margin-top: 0;
 }
 
-/* Palestrantes */
 #palestrantes {
     display: flex;
     flex-direction: column;
