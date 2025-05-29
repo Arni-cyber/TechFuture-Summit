@@ -7,7 +7,6 @@
     --branco: #d0e3e9;
 }
 
-/* Reset e base */
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +16,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hero image */
 .hero {
     background-image: url('techsummit.png');
     background-size: cover;
@@ -87,7 +85,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -116,7 +113,6 @@ button:hover {
     background-color: #2563eb;
 }
 
-/* Responsividade (ainda em coluna, mas com ajustes possíveis futuros) */
 @media (min-width: 768px) {
     #palestrantes {
         flex-direction: column;
